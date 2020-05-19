@@ -140,8 +140,11 @@
 	gt911@5d {
 		compatible = "goodix,gt911";
 		reg = <0x5d>;
-		interrupt-parent = <&gpio5>;
-		interrupts = <5 0>;
+		interrupt-parent = <&gpio4>;
+		interrupts = <22 0>;
+
+		irq-gpios = <&gpio4 22 0>;
+		reset-gpios = <&gpio4 21 0>;
 	};
 };
 
